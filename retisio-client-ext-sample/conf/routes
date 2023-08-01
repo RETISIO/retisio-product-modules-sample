@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+#Extention service apis
+GET         /ping                       com.retisio.arc.ext.controller.ExtCatalogServiceController.ping
+DELETE      /catalogs/:catalogId        com.retisio.arc.ext.controller.ExtCatalogServiceController.deleteCatalog(catalogId)
+PATCH       /catalogs/:catalogId/activate        com.retisio.arc.ext.controller.ExtCatalogServiceController.activateCatalog(catalogId)
+
+->  /catalogs catalog.Routes

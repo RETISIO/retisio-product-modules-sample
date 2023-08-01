@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+#Core service apis
+GET     /               com.retisio.arc.controller.CatalogServiceController.getCatalogs(request:Request)
+GET     /:id            com.retisio.arc.controller.CatalogServiceController.getCatalog(id)
+POST    /               com.retisio.arc.controller.CatalogServiceController.createCatalog(request:Request)
+PUT     /               com.retisio.arc.controller.CatalogServiceController.updateCatalog(request:Request)
+PATCH   /:id            com.retisio.arc.controller.CatalogServiceController.patchCatalog(request:Request, id)
+DELETE  /:id            com.retisio.arc.controller.CatalogServiceController.deleteCatalog(id)
+POST    /csv/import     com.retisio.arc.controller.CatalogServiceController.importCsvCatalog(request:Request)
+GET     /csv/export     com.retisio.arc.controller.CatalogServiceController.exportCsvCatalog
